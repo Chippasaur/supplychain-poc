@@ -13,7 +13,7 @@
 [installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/)
 
 ```
-use serai_poc_local
+use test_dev
 
 db.createUser({user: "TEST", roles: [ { role: "readWrite", db: "TEST"} ], pwd: "TEST"})
 ```
