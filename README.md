@@ -15,7 +15,7 @@
 ```
 use serai_poc_local
 
-db.createUser({user: "serai_poc_local", roles: [ { role: "readWrite", db: "serai_poc_local"} ], pwd: "7urdsQSwi4z44A"})
+db.createUser({user: "TEST", roles: [ { role: "readWrite", db: "TEST"} ], pwd: "TEST"})
 ```
 
 ### Vercel
