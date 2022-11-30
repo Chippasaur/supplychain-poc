@@ -1,0 +1,9 @@
+@import '../../resources/styles/mixins';
+
+.icon {
+  @include inline-flex-center-center;
+}
+
+.pointer {
+  cursor: pointer;
+}

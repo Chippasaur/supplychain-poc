@@ -1,0 +1,48 @@
+{
+  "dev": {
+    "driver": "mongodb",
+    "database": "serai_poc_preview",
+    "host": "34.92.118.222",
+    "port": "27017",
+    "user": "serai_poc_preview",
+    "password": "sEra1Pr2vI2W"
+  },
+  "preview": {
+    "driver": "mongodb",
+    "database": "serai_poc_preview",
+    "host": "34.92.118.222",
+    "port": "27017",
+    "user": "serai_poc_preview",
+    "password": "sEra1Pr2vI2W"
+  },
+  "ci": {
+    "driver": "mongodb",
+    "database": "serai_poc_ci",
+    "host": "34.92.118.222",
+    "port": "27017",
+    "user": "serai_poc_ci",
+    "password": "sEra1e1"
+  },
+  "production": {
+    "driver": "mongodb",
+    "database": "serai_poc_production",
+    "host": "34.92.118.222",
+    "port": "27017",
+    "user": "serai_poc_production",
+    "password": "sEra1Pr0dUc71On"
+  },
+  "local": {
+    "driver": "mongodb",
+    "database": "serai_poc_local",
+    "host": "localhost",
+    "port": "27017",
+    "user": "serai_poc_local",
+    "password": "7urdsQSwi4z44A"
+  },
+  "test": {
+    "driver": "mongodb",
+    "database": "test",
+    "host": "localhost",
+    "port": "30000"
+  }
+}

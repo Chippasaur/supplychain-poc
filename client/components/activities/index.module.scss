@@ -1,0 +1,11 @@
+.tabContent {
+  height: 700px;
+  position: relative;
+  @include scrollBar;
+}
+
+.news {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 700px;
+}

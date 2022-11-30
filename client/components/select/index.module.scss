@@ -1,0 +1,25 @@
+@import '../../resources/styles/colors';
+@import '../../resources/styles/mixins';
+@import '../../resources/styles/fonts';
+
+.selectBox {
+  background: $white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.optionContainer {
+  @include flex-between-center;
+  flex: 1;
+}
+
+.tag {
+  font-size: 12px;
+  font-family: HeroNew;
+  font-weight: 400;
+
+  height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

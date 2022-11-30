@@ -1,0 +1,35 @@
+{
+  "paths": {
+    "/users/me": {
+      "get": {
+        "tags": ["users"],
+        "summary": "get user's own information",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "customerId": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "name": "Matt",
+                "email": "example@example.com",
+                "customerId": "607905c5b1ae659c9c585b9a"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

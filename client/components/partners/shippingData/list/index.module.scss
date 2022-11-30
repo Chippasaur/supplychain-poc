@@ -1,0 +1,90 @@
+$border: 1px solid $light-gray-smoke;
+
+$start-padding: 50px;
+.des {
+  @include flex-start-center;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  height: 40px;
+  border: $border;
+  border-left: 0;
+  border-right: 0;
+  text-transform: capitalize;
+  span:first-child {
+    padding-left: $start-padding;
+  }
+}
+
+.codeOptions {
+  width: 302px;
+}
+
+.buyerOptions {
+  width: 235px;
+}
+
+.spreadOut {
+  flex: 1;
+  border-left: $border;
+}
+
+.option {
+  @include text-overflow-one-line;
+  padding: 14px 23px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: capitalize;
+
+  &.optionActive {
+    font-weight: bold;
+    background: $light-white-smoke;
+  }
+
+  &.optionActive:after {
+    font-weight: bold;
+    width: 4px;
+    height: 100%;
+    background: $orange;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.option:hover {
+  cursor: pointer;
+}
+
+.buyerRow {
+  display: flex;
+  align-items: center;
+  border-bottom: $border;
+  font-size: 12px;
+
+  .val {
+    font-weight: 600;
+  }
+  .title {
+    @include text-overflow-one-line;
+    padding-left: $start-padding;
+    padding-right: 20px;
+  }
+
+  .shipment {
+    text-transform: capitalize;
+    width: 100px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.codeResultColumn1 {
+  width: 280px;
+}
+.buyerResultColumn1 {
+  width: 350px;
+}

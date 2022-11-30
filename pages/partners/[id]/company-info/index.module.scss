@@ -1,0 +1,103 @@
+.companyInfo {
+  flex: 1;
+  padding: 20px 30px;
+  background: $light-white-smoke;
+
+  .header {
+    margin-bottom: 8px;
+    @include flex-between-center;
+
+    h2 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section {
+    background: $white;
+    border: 1px solid $white;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+
+    a {
+      color: $blue;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section:not(:first-child) {
+    margin-top: 12px;
+  }
+
+  .companyStatus,
+  .sanction {
+    @include flex-start-center;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .companyActiveStatus {
+    @include flex-start-center;
+    color: $common-green;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .companyInactiveStatus {
+    @include flex-start-center;
+    color: $red;
+    margin-left: -2px;
+    .companyInactiveStatusIcon {
+      margin-right: 3px;
+      height: 5px;
+    }
+  }
+
+  .sanction {
+    color: $common-green;
+  }
+
+  .firstColumn {
+    flex: 1;
+    flex-basis: 600px;
+  }
+
+  .secondColumn {
+    flex-basis: 350px;
+    max-width: 400px;
+    margin-left: 12px;
+  }
+
+  .parts {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      flex: 1;
+    }
+  }
+
+  hr {
+    background: $grey-2;
+    border: 0;
+    height: 1px;
+    margin: 16px 0 0;
+  }
+
+  .updateInfo {
+    flex: 1;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+  }
+}

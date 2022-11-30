@@ -1,0 +1,134 @@
+.wrapper {
+  position: relative;
+  @include scrollBar;
+}
+
+.filter {
+  position: absolute;
+  right: 1px;
+  top: -50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: $title-weight;
+  margin-bottom: 15px;
+}
+
+.container {
+  width: 336px;
+  height: 685px;
+  overflow: hidden;
+  overflow-y: auto;
+  @media screen and (min-width: $small-screen) {
+    width: 342px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 349px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 376px;
+  }
+}
+
+.alert {
+  position: relative;
+  min-height: 98px;
+  width: 324px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+  margin: 2px 0 12px 2px;
+  padding: 16px 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+
+  @media screen and (min-width: $small-screen) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 337px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 364px;
+  }
+}
+
+.date {
+  font-size: 12px;
+  font-weight: $font-weight;
+  line-height: 16px;
+  margin-bottom: 12px;
+  max-width: 100px;
+}
+
+.level {
+  font-size: 12px;
+  line-height: 16px;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+
+.content {
+  font-size: 14px;
+  font-weight: $font-weight;
+  margin: 0;
+  line-height: 18px;
+  max-height: 54px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.contentSupplierName {
+  margin: 0;
+  font-size: 14px;
+  font-weight: $title-weight;
+  line-height: 18px;
+  width: fit-content;
+}
+
+.source {
+  color: $base-black;
+  font-size: 12px;
+  font-weight: $font-weight;
+  margin: 15px 0 0 0;
+
+  > * {
+    vertical-align: middle;
+  }
+}
+
+.high {
+  color: $venetian-red;
+}
+
+.medium {
+  color: $yellow;
+}
+
+.low {
+  color: $base-grey;
+}
+
+.highRiskBackground {
+  background: #fffae8;
+  border: 1px solid $yellow;
+}
+
+.background {
+  background: $white;
+  border: 1px solid $white;
+}

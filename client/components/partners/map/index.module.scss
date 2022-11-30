@@ -1,0 +1,11 @@
+.mapContainer {
+  display: flex;
+  justify-content: space-between;
+  background: $white;
+
+  .loading {
+    position: relative;
+    flex: 1;
+    min-height: 500px;
+  }
+}

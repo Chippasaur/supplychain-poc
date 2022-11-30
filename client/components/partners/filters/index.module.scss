@@ -1,0 +1,78 @@
+@mixin filterBar {
+  height: 64px;
+  background: $white;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  padding: 12px 24px;
+
+  @include flex-between-center;
+
+  .filters {
+    @include flex-center-center;
+
+    .select {
+      margin-left: 8px;
+    }
+  }
+
+  .searchBar {
+    width: 300px;
+  }
+
+  .advancedFilterButton {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    cursor: pointer;
+  }
+
+  .advancedFilterLabel {
+    margin-left: 8px;
+    font-family: HeroNew;
+    color: $secondary-dark-blue;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.basicFilterBar {
+  @include filterBar;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.advancedFilterBar {
+  @include filterBar;
+  margin-top: 0;
+  border-top: 0.5px dashed $base-grey;
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.15);
+  .advancedFilterDescription {
+    margin: 0 7px 0 8px;
+    font-family: HeroNew;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: $base-black;
+  }
+
+  .filterDescription {
+    margin: 0 9px 0 26px;
+    font-family: HeroNew;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: $base-grey;
+  }
+
+  .sliderBackground {
+    width: 223px;
+    height: 32px;
+    background-color: $light-white-smoke;
+    border-radius: 4px;
+  }
+  .icon {
+    margin: 0;
+    color: $secondary-blue;
+  }
+}

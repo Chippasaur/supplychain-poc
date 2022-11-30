@@ -1,0 +1,11 @@
+.network {
+  display: flex;
+  justify-content: space-between;
+  background: $white;
+}
+
+.networkGraph {
+  flex: 1;
+  background-color: $light-gray;
+  min-height: 600px;
+}

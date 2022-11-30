@@ -1,0 +1,8 @@
+[
+  {
+    "_id": { "$oid": "60360f1430229bceb5e33cb2" },
+    "customerName": "Nike, Inc",
+    "email": "example@example.com",
+    "name": "Matt"
+  }
+]

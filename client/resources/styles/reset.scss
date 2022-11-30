@@ -1,0 +1,73 @@
+@import 'colors';
+
+button.MuiButton-root,
+button.MuiTab-root {
+  text-transform: none;
+  font-family: HeroNew;
+  background: $white;
+}
+
+div.MuiInput-underline:after {
+  border-bottom: 1px solid #000;
+}
+
+div.MuiInput-underline:before {
+  border-bottom: 1px solid #979797;
+}
+
+li.MuiMenuItem-root {
+  font-size: 12px;
+}
+
+div.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+  padding-right: 0;
+}
+
+div.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon
+  .MuiAutocomplete-inputRoot[class*='MuiOutlinedInput-root'] {
+  padding-right: 24px;
+}
+
+input.MuiAutocomplete-inputRoot[class*='MuiOutlinedInput-root'] .MuiAutocomplete-input:first-child {
+  padding-left: 0;
+}
+
+.MuiDataGrid-colCell {
+  line-height: 14px !important;
+  max-width: unset !important;
+}
+
+.MuiDataGrid-cell {
+  line-height: unset !important;
+  max-height: unset !important;
+}
+
+.MuiDataGrid-row,
+.MuiDataGrid-viewport {
+  max-height: unset !important;
+}
+
+.MuiDataGrid-window {
+  overflow-y: scroll !important;
+}
+
+div.MuiChip-root.MuiAutocomplete-tag.MuiChip-deletable {
+  width: 71px;
+  height: 16px;
+}
+
+div.MuiChip-root.MuiAutocomplete-tag.MuiChip-deletable > span {
+  text-overflow: clip;
+  overflow: hidden;
+  font-size: 11px;
+}
+
+div.MuiChip-root.MuiAutocomplete-tag.MuiChip-deletable > svg {
+  height: 16px;
+  width: 16px;
+  color: gray;
+}
+
+div.MuiCircularProgress-colorPrimary {
+  color: $orange;
+}

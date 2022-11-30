@@ -1,0 +1,24 @@
+.avatar {
+  @include square(50px);
+  margin-right: 16px;
+}
+
+div.avatarOrange {
+  background-color: $orange;
+}
+
+div.avatarYellow {
+  background-color: $yellow;
+}
+
+div.avatarDarkOrange {
+  background-color: $dark-orange;
+}
+
+div.avatarBlue {
+  background-color: $secondary-blue;
+}
+
+div.avatarGreen {
+  background-color: $common-green;
+}

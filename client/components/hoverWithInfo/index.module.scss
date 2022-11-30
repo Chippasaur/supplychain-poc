@@ -1,0 +1,40 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+
+  .hoverInfo {
+    position: absolute;
+    display: none;
+  }
+}
+
+.wrapper:hover {
+  background: rgba(240, 240, 240, 0.5);
+
+  .hoverInfo {
+    position: absolute;
+    display: initial;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    z-index: 9;
+    color: $white;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+    border-radius: 8px;
+    padding: 10px;
+    will-change: transform;
+
+    &.hoverInfoTop {
+      top: unset;
+      bottom: 40px;
+    }
+  }
+  .hoverInfo:before {
+    content: '';
+  }
+}

@@ -1,0 +1,42 @@
+.wrapper {
+  padding-top: 10px;
+}
+
+.header {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.buyer {
+  @include flex-start-center;
+  margin: 8px 0;
+}
+
+.avatar {
+  .companyIcon {
+    @include square(26px);
+    font-size: 12px;
+  }
+}
+
+.name {
+  font-size: 12px;
+  font-weight: $font-weight;
+}
+
+.viewMore {
+  @include flex-start-center;
+  padding-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: $secondary-dark-blue;
+  cursor: pointer;
+
+  i {
+    margin-left: 8px;
+  }
+}
+
+.icon {
+  color: $secondary-dark-blue;
+}

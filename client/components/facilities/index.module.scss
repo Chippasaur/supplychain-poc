@@ -1,0 +1,23 @@
+.map {
+  display: flex;
+  justify-content: space-between;
+  background: $white;
+  width: 100%;
+
+  .zoomController button {
+    background-size: 75% !important;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    border-radius: 2px !important;
+    border: 0.5px solid $casper !important;
+  }
+
+  .zoomController button:first-child {
+    margin-bottom: 8px;
+    background-image: url('../../resources/icons/zoom_in.svg') !important;
+  }
+
+  .zoomController button:nth-child(2) {
+    background-image: url('../../resources/icons/zoom_out.svg') !important;
+  }
+}

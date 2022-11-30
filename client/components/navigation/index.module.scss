@@ -1,0 +1,104 @@
+@import '../../resources/styles/mixins';
+@import '../../resources/styles/colors';
+@import '../../resources/styles/variables';
+
+.navigationBar {
+  @include flex-between-center;
+
+  height: $navigation-height;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  background: $white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  min-width: 1175px;
+  z-index: $navigation-index;
+
+  & > div {
+    flex-shrink: 0;
+  }
+
+  .headerTitle {
+    @include flex-start-center;
+
+    > img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .menus {
+    @include flex-end-center;
+  }
+
+  .message {
+    @include flex-end-center;
+
+    .avatar {
+      margin: 0 10px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+}
+
+.item {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: $base-grey;
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer;
+
+  @include flex-center-center;
+}
+
+.active {
+  color: $base-black;
+
+  > i,
+  svg {
+    color: $orange;
+  }
+}
+
+.disable {
+  color: $silver;
+  cursor: default;
+
+  > i,
+  svg {
+    color: $silver;
+  }
+}
+
+.active:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: $orange;
+  display: block;
+  bottom: -8px;
+}
+
+.icon {
+  color: $base-grey;
+  margin-right: 14px;
+
+  &.iconActive {
+    color: $orange;
+  }
+
+  &.iconDisabled {
+    color: $silver;
+  }
+}
+
+.link {
+  margin-left: 14px;
+}

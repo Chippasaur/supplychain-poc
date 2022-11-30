@@ -1,0 +1,1 @@
+export { mongoMiddleware } from './mongo'

@@ -1,0 +1,64 @@
+.loading {
+  position: relative;
+  top: 50%;
+}
+
+.graph {
+  @include flex-center-center;
+  flex: 1;
+  position: relative;
+  background-color: $light-gray;
+
+  i.zoomIn,
+  i.zoomOut {
+    @include square(26px);
+    @include flex-center-center;
+    position: absolute;
+    top: 20px;
+    border: 0.5px solid $zumthor;
+    border-radius: 4px;
+    background: $white;
+    color: $label-grey;
+  }
+
+  i:active {
+    color: $black;
+  }
+
+  i.zoomIn {
+    right: 50px;
+  }
+
+  i.zoomOut {
+    right: 20px;
+  }
+}
+
+.cursorGrab {
+  canvas {
+    cursor: grab !important;
+  }
+}
+.toolTip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  text-align: center;
+  min-height: 40px;
+  max-width: 250px;
+  color: $white;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: $network-tootip-index;
+}
+
+.supplierDetail {
+  @include popup-animation;
+  animation: popup 0.1s;
+  background: $white;
+  z-index: $network-card-index;
+  position: absolute;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}

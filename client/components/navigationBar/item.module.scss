@@ -1,0 +1,49 @@
+@import '../../resources/styles/colors';
+@import '../../resources/styles/mixins';
+
+.item {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  color: $base-grey;
+  position: relative;
+  margin: 0 20px;
+
+  @include flex-center-center;
+}
+
+.active {
+  color: $base-black;
+}
+
+.disable {
+  color: $silver;
+}
+
+.active:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: $orange;
+  display: block;
+  bottom: -8px;
+}
+
+.icon {
+  color: $base-grey;
+  margin-right: 14px;
+
+  &.iconActive {
+    color: $orange;
+  }
+
+  &.iconDisabled {
+    color: $silver;
+  }
+}
+
+.linkDisabled {
+  cursor: pointer;
+  pointer-events: none;
+}

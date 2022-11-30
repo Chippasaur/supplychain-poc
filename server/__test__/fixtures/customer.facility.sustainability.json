@@ -1,0 +1,28 @@
+[
+  {
+    "performance": [
+      { "sustainabilityIndex": "totalAverage", "score": "50.0" },
+      { "sustainabilityIndex": "ems", "score": "50.0" },
+      { "sustainabilityIndex": "energyEmissions", "score": "50.0" },
+      { "sustainabilityIndex": "waterUse", "score": "50.0" },
+      { "sustainabilityIndex": "wasteWaterEffluent", "score": "50.0" },
+      { "sustainabilityIndex": "emissionToAir", "score": "50.0" },
+      { "sustainabilityIndex": "wasteManagement", "score": "50.0" },
+      { "sustainabilityIndex": "chemicals", "score": "50.0" }
+    ],
+    "reportTime": 2021
+  },
+  {
+    "performance": [
+      { "sustainabilityIndex": "totalAverage", "score": "70.0" },
+      { "sustainabilityIndex": "ems", "score": "70.0" },
+      { "sustainabilityIndex": "energyEmissions", "score": "70.0" },
+      { "sustainabilityIndex": "waterUse", "score": "70.0" },
+      { "sustainabilityIndex": "wasteWaterEffluent", "score": "70.0" },
+      { "sustainabilityIndex": "emissionToAir", "score": "70.0" },
+      { "sustainabilityIndex": "wasteManagement", "score": "70.0" },
+      { "sustainabilityIndex": "chemicals", "score": "70.0" }
+    ],
+    "reportTime": 2020
+  }
+]

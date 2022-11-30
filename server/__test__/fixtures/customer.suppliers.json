@@ -1,0 +1,98 @@
+[
+  {
+    "id": "6036190bfa6b9297fa86c89a",
+    "companyName": "COOPERSHOES",
+    "entity": 0,
+    "tier": 2,
+    "financialHealth": 0,
+    "rating": 0,
+    "riskLevel": 0,
+    "higgTotalScore": 50,
+    "category": 1,
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": 100.0
+    },
+    "location": {
+      "address": "address",
+      "city": "city",
+      "state": "state",
+      "region": "region",
+      "postalCode": "postalCode"
+    },
+    "logo": "",
+    "groupId": "6036190bfa6b9297fa86c891"
+  },
+  {
+    "id": "6036190bfa6b9297fa86c89e",
+    "companyName": "MV SHOES",
+    "entity": 0,
+    "tier": 2,
+    "financialHealth": 1,
+    "rating": 2,
+    "riskLevel": 1,
+    "higgTotalScore": 30,
+    "category": 2,
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": 100.0
+    },
+    "location": {
+      "address": "address",
+      "city": "city",
+      "state": "state",
+      "region": "region",
+      "postalCode": "postalCode"
+    },
+    "logo": "",
+    "groupId": "6036190bfa6b9297fa86c891"
+  },
+  {
+    "id": "6036190bfa6b9297fa86c891",
+    "companyName": "SAN FANG",
+    "entity": 1,
+    "tier": 2,
+    "financialHealth": 2,
+    "rating": 3.5,
+    "riskLevel": 2,
+    "higgTotalScore": -1,
+    "category": 3,
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": 100.0
+    },
+    "location": {
+      "address": "address",
+      "city": "city",
+      "state": "state",
+      "region": "region",
+      "postalCode": "postalCode"
+    },
+    "logo": "",
+    "groupId": "6036190bfa6b9297fa86c891"
+  },
+  {
+    "id": "6036190bfa6b9297fa86c892",
+    "companyName": "SAN FANG",
+    "entity": 0,
+    "tier": 2,
+    "financialHealth": 2,
+    "rating": 3.5,
+    "riskLevel": 2,
+    "higgTotalScore": 30,
+    "category": 3,
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": 100.0
+    },
+    "location": {
+      "address": "address",
+      "city": "city",
+      "state": "state",
+      "region": "region",
+      "postalCode": "postalCode"
+    },
+    "logo": "",
+    "groupId": "6036190bfa6b9297fa86c893"
+  }
+]

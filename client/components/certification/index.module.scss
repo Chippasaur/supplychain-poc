@@ -1,0 +1,61 @@
+.certification {
+  flex: 1;
+  background: $light-white-smoke;
+
+  .header {
+    @include flex-between-center;
+    height: 54px;
+    background-color: $very-light-grey;
+    line-height: 53px;
+    padding-right: 52px;
+    border-bottom: 1px solid $light-gray-smoke;
+  }
+
+  .title {
+    font-weight: $title-weight;
+    font-size: 16px;
+    margin-left: 28px;
+  }
+
+  .body {
+    padding: 36px 39px;
+    background-color: #f8f8f8;
+  }
+
+  .certificateCard {
+    display: inline-block;
+    margin-right: 24px;
+    background-color: white;
+    padding: 10px 12px 16px 12px;
+    box-shadow: 0 2px 4.5px rgba(0, 0, 0, 0.18);
+    border-radius: 4px;
+  }
+
+  .name {
+    margin: 12px 0 8px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .issueDate,
+  .expiryDate {
+    font-size: 12px;
+    line-height: 24px;
+    color: $nobel;
+  }
+
+  .issueDate {
+    margin-right: 14px;
+  }
+
+  .expiryDate {
+    margin-right: 9px;
+  }
+
+  .date {
+    font-size: 12px;
+    line-height: 24px;
+    color: $paynes-grey;
+  }
+}

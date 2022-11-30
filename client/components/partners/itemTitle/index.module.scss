@@ -1,0 +1,15 @@
+.itemTitle {
+  @include flex-between-center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-grey;
+  margin-top: 15px;
+  text-transform: capitalize;
+
+  .view {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    color: $blue;
+  }
+}

@@ -1,0 +1,173 @@
+.content {
+  padding: 20px 30px;
+  flex: 1;
+
+  .title {
+    @include flex-between-center;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  .infos {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .columnTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .firstColumn {
+    width: 324px;
+    margin-right: 12px;
+    @media screen and (min-width: $large-screen) {
+      width: 345px;
+    }
+  }
+
+  .box {
+    @include shadow-box;
+    padding: 5px 20px 20px;
+    margin-bottom: 12px;
+  }
+
+  .facility {
+    @include flex-between-center;
+  }
+
+  .mapLink {
+    @include flex-center-column;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-top: 15px;
+    height: 96px;
+    font-size: 11px;
+    color: $secondary-dark-blue;
+    font-weight: 500;
+  }
+
+  .incomeNums {
+    @include flex-between-center;
+  }
+
+  .num {
+    font-weight: 500;
+    font-size: 24px;
+    color: $paynes-grey;
+  }
+
+  .trend {
+    @include flex-between-center;
+    color: $common-green;
+    font-size: 20px;
+    line-height: 34px;
+    min-width: 90px;
+  }
+
+  .decrease {
+    color: $dark-orange;
+
+    .trendIcon {
+      transform: rotate(180deg);
+    }
+  }
+  .even {
+    color: $yellow;
+    .trendIcon {
+      height: 2px;
+      width: 14px;
+      background: $yellow;
+      overflow: hidden;
+    }
+  }
+
+  .des {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $paynes-grey;
+  }
+
+  .locations {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .email {
+    font-size: 14px;
+    line-height: 20px;
+    color: $blue;
+    display: block;
+  }
+
+  .secondCol {
+    margin-right: 12px;
+    width: 273px;
+
+    @media screen and (min-width: $small-screen) {
+      width: 273px;
+    }
+
+    @media screen and (min-width: $medium-screen) {
+      width: 298px;
+    }
+
+    @media screen and (min-width: $large-screen) {
+      width: 364px;
+    }
+  }
+
+  .thirdCol {
+    .notifications {
+      height: 345px;
+      margin-bottom: 42px;
+    }
+
+    .alerts {
+      height: 366px;
+      width: 344px;
+      overflow-y: auto;
+
+      @media screen and (min-width: $small-screen) {
+        width: 344px;
+      }
+
+      @media screen and (min-width: $medium-screen) {
+        width: 344px;
+      }
+
+      @media screen and (min-width: $large-screen) {
+        width: 344px;
+      }
+
+      .alertItem {
+        width: 332px;
+
+        @media screen and (min-width: $small-screen) {
+          width: 332px;
+        }
+
+        @media screen and (min-width: $medium-screen) {
+          width: 332px;
+        }
+
+        @media screen and (min-width: $large-screen) {
+          width: 332px;
+        }
+      }
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+      display: block;
+    }
+  }
+}

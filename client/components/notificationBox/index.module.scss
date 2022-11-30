@@ -1,0 +1,72 @@
+.wrapper {
+  @include scrollBar;
+}
+
+.container {
+  width: 339px;
+  overflow: hidden;
+  overflow-y: auto;
+
+  @media screen and (min-width: $small-screen) {
+    width: 339px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 341px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 343px;
+  }
+}
+
+.date {
+  font-size: 12px;
+  font-weight: $font-weight;
+  margin-bottom: 12px;
+}
+
+.item {
+  @include shadow-box;
+  min-height: 98px;
+  width: 330px;
+  margin: 2px 0 12px 2px;
+  padding: 16px 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkBoxContainer {
+  position: relative;
+  top: -4px;
+}
+
+.checkBoxLabel {
+  font-family: HeroNew;
+  position: relative;
+  top: -5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: $base-grey;
+  align-items: center;
+}
+
+.content {
+  font-size: 14px;
+  font-weight: $font-weight;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

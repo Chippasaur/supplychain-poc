@@ -1,0 +1,16 @@
+.surveys {
+  flex: 1;
+  padding: 20px 30px;
+  background: $light-white-smoke;
+
+  .header {
+    margin-bottom: 8px;
+    @include flex-between-center;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

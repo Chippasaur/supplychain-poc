@@ -1,0 +1,86 @@
+{
+  "paths": {
+    "/news": {
+      "get": {
+        "tags": ["news"],
+        "summary": "get 30 news by customer id and supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "query",
+            "description": "id of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "supplierId",
+            "in": "query",
+            "description": "id of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "supplierId": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "tier": {
+                    "type": "string"
+                  },
+                  "postedAt": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c8b1ae659c9c586a3e",
+                  "supplierId": "607905c5b1ae659c9c585b9d",
+                  "title": "China set to overhaul HK electoral system",
+                  "content": "The tech giant says it will not develop workarounds once it abandons third-party tracking cookies.",
+                  "tier": 2,
+                  "postedAt": "2021-02-26T09:11:36.610Z"
+                },
+                {
+                  "id": "607905c8b1ae659c9c586a3d",
+                  "supplierId": "607905c5b1ae659c9c585b9d",
+                  "title": "Amazon till-less grocery store opens in London",
+                  "content": "The Competition and Markets Authority has launched an investigation into how Apple's app store is run.",
+                  "tier": 2,
+                  "postedAt": "2020-12-06T22:12:39.951Z"
+                },
+                {
+                  "id": "607905c8b1ae659c9c586a3c",
+                  "supplierId": "607905c5b1ae659c9c585b9d",
+                  "title": "Rubana Huq’s five-year vision on the Bangladesh RMG history",
+                  "content": "Serai connects apparel buyers, <b>BUR-TEX HOSIERY, INC.</b> to build trusted relationships with simple information sharing.We understand that navigating new markets is a pain point for every business. Backed by HSBC’s 150 years in trade, our purpose is to simplify the way businesses build relationships to help them overcome the complexities of international trade.",
+                  "tier": 2,
+                  "postedAt": "2020-12-05T03:04:10.590Z"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

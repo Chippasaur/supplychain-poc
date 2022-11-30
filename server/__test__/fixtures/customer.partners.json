@@ -1,0 +1,77 @@
+[
+  {
+    "tier": 1,
+    "suppliers": [
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89c",
+        "name": "ccd",
+        "category": 1
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89a",
+        "name": "oop",
+        "category": 3
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89b",
+        "name": "wqq",
+        "category": 0
+      }
+    ]
+  },
+  {
+    "tier": 2,
+    "suppliers": [
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89f",
+        "name": "hgh",
+        "category": 0
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89g",
+        "name": "mhm",
+        "category": 4
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89h",
+        "name": "qwe",
+        "category": 3
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c89e",
+        "name": "uui",
+        "category": 1
+      }
+    ]
+  },
+  {
+    "tier": 3,
+    "suppliers": [
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c893",
+        "name": "hho",
+        "category": 3
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c892",
+        "name": "klj",
+        "category": 2
+      },
+      {
+        "nextSupplierIds": [],
+        "supplierId": "6036190bfa6b9297fa86c891",
+        "name": "nhy",
+        "category": 5
+      }
+    ]
+  }
+]

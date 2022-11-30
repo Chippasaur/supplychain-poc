@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress {
+  width: 63px;
+  height: 5px;
+  background-color: $white-smoke;
+  margin-right: 2px;
+
+  @media screen and (min-width: $large-screen) {
+    width: 78px;
+  }
+}
+
+.low {
+  background-color: $lime-green;
+}
+
+.moderate {
+  background-color: $yellow;
+}
+
+.high {
+  background-color: $indian-red;
+}
+
+.severe {
+  background-color: $dark-red;
+}

@@ -1,0 +1,22 @@
+.tab {
+  margin-top: 28px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-end;
+
+  .updateDate {
+    color: $base-grey;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .tip {
+    font-size: 10px;
+    font-weight: 400;
+    color: $base-grey;
+    margin-left: 16px;
+  }
+}

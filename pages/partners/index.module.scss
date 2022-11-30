@@ -1,0 +1,34 @@
+.header {
+  @include flex-between-center;
+
+  .title {
+    font-weight: 600;
+    margin-left: 24px;
+  }
+}
+
+.filterAnnotation {
+  margin: 10px 0 5px 0;
+  width: 650px;
+  height: 16px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: $river-bed;
+}
+
+.tabs {
+  margin-top: 12px;
+  padding: 0 24px;
+
+  @include flex-between-center;
+}
+
+.tabContent {
+  background: $white;
+  position: relative;
+  border-top: 0.5px solid $gainsboro;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}

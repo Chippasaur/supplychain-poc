@@ -1,0 +1,25 @@
+.pagination {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  height: 50px;
+
+  .pageButtons {
+    margin-left: 34px;
+    margin-right: 18px;
+    width: 66px;
+    display: flex;
+    justify-content: space-between;
+
+    .pageAction {
+      cursor: pointer;
+      font-size: 16px;
+
+      &.disabled {
+        cursor: default;
+        color: rgba(0, 0, 0, 0.26);
+      }
+    }
+  }
+}

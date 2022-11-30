@@ -1,0 +1,64 @@
+.container {
+  padding: 20px 25px;
+  @include page-box;
+
+  h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 10px;
+  }
+}
+
+.main {
+  max-height: 800px;
+  display: flex;
+  justify-content: space-between;
+
+  .column {
+    width: 410px;
+
+    @media screen and (min-width: $small-screen) {
+      width: 410px;
+    }
+
+    @media screen and (min-width: $medium-screen) {
+      width: 425px;
+    }
+
+    @media screen and (min-width: $large-screen) {
+      width: 440px;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  .companyInfo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 32px;
+    color: $paynes-grey;
+
+    .avatar {
+      height: 32px;
+      width: 32px;
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  }
+
+  button {
+    margin: 0 16px;
+  }
+}
+
+.notification {
+  height: 685px;
+}

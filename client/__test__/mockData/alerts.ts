@@ -1,0 +1,32 @@
+export default [
+  {
+    id: '60371076c976f82c9a919922',
+    content: 'Xinjiang Cotton Faces Sweeping New Western Sanctions',
+    postedAt: new Date('2021-01-12T16:00:00.000Z'),
+    level: 'High',
+    source: 'sourcingjournal.com',
+    supplierName: 'Xinjiang Cotton',
+    supplierId: '60371076c976f82c9a919982',
+    type: 0,
+  },
+  {
+    id: '60371076c976f82c9a919923',
+    content: 'Merces Apparel Co., LTD has had a credit issue: Credit report has changed from Amber to Red',
+    postedAt: new Date('2021-01-07T16:00:00.000Z'),
+    level: 'Low',
+    source: 'Euler Hermes',
+    supplierName: 'Merces Apparel Co., LTD',
+    supplierId: '60371076c976f82c9a919981',
+    type: 1,
+  },
+  {
+    id: '60371076c976f82c9a919924',
+    content: 'Grand Group Standard industrial Classification (SIC) rating has dropped below requirements',
+    postedAt: new Date('2020-12-28T00:00:00.000Z'),
+    level: 'Medium',
+    source: 'D&B',
+    supplierName: 'Grand Group',
+    supplierId: '60371076c976f82c9a919682',
+    type: 2,
+  },
+]

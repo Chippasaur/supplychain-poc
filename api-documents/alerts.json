@@ -1,0 +1,70 @@
+{
+  "paths": {
+    "/alerts": {
+      "get": {
+        "tags": ["alerts"],
+        "summary": "get 30 alerts sort by postedAt time",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "source": {
+                    "type": "string"
+                  },
+                  "supplierName": {
+                    "type": "string"
+                  },
+                  "postedAt": {
+                    "type": "string"
+                  },
+                  "level": {
+                    "type": "string"
+                  },
+                  "supplierId": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "number"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905cab1ae659c9c5880d6",
+                  "content": "The Waste score for <strong>GUANG DER</strong> facility <strong>NICE BAG HUAI AN INTERNATIONAL IND CO.,LTD</strong> has decreased from 88.3 to 48.5",
+                  "source": "Higg",
+                  "supplierName": "NICE BAG HUAI AN INTERNATIONAL IND CO.,LTD",
+                  "postedAt": "2021-03-10T05:08:04.519Z",
+                  "level": "Medium",
+                  "supplierId": "607905c5b1ae659c9c585c27",
+                  "type": 8
+                },
+                {
+                  "id": "607905cab1ae659c9c5880d4",
+                  "content": "The Waste score for <strong>TUNTEX</strong> facility <strong>PT TUNTEX GARMENT INDONESIA-CKP</strong> has increased from 35.8 to 51.5",
+                  "source": "Higg",
+                  "supplierName": "PT TUNTEX GARMENT INDONESIA-CKP",
+                  "postedAt": "2021-03-05T13:29:07.128Z",
+                  "level": "Low",
+                  "supplierId": "607905c6b1ae659c9c585da8",
+                  "type": 8
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

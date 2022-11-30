@@ -1,0 +1,35 @@
+{
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": ["infrastructure"],
+        "summary": "check app health",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "version": {
+                  "type": "string"
+                },
+                "uptime": {
+                  "type": "string"
+                },
+                "db_name": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "version": "0.1.0",
+                "uptime": "52731.51",
+                "db_name": "serai_poc_local"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

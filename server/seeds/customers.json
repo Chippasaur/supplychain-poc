@@ -1,0 +1,7 @@
+[
+  {
+    "_id": { "$oid": "60360f1530229bceb5e33cb4" },
+    "logoUri": "/companies/nike.png",
+    "name": "Nike, Inc"
+  }
+]

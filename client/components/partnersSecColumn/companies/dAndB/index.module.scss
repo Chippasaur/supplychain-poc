@@ -1,0 +1,48 @@
+.container {
+  @include flex-between-center;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.content {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: $base-grey;
+}
+
+.level {
+  height: 11px;
+  line-height: 11px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.levelLow {
+  color: $lime-green;
+}
+
+.levelModerate {
+  color: $yellow;
+}
+
+.levelHigh {
+  color: $indian-red;
+}
+
+.levelSevere {
+  color: $dark-red;
+}
+
+.levelOutOfBusiness {
+  color: $night-rider;
+}
+
+.levelUndetermined {
+  color: $spindle;
+}
+
+.levelUnavailable {
+  color: $link-water;
+}

@@ -1,0 +1,26 @@
+.zoomButton {
+  button {
+    background-size: 75% !important;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    border-radius: 4px !important;
+    border: 0.5px solid $casper !important;
+  }
+
+  button:first-child {
+    margin-right: 5px;
+    background-image: url('../../../resources/icons/zoom_in.svg') !important;
+  }
+
+  button:nth-child(2) {
+    background-image: url('../../../resources/icons/zoom_out.svg') !important;
+  }
+}
+
+.statistics {
+  @include flex-start-column;
+  margin: 18px 0 0 12px;
+  & > :first-child {
+    margin-bottom: 10px;
+  }
+}

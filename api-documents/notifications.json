@@ -1,0 +1,120 @@
+{
+  "paths": {
+    "/notifications": {
+      "get": {
+        "tags": ["notifications"],
+        "summary": "update notification",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "supplierId": {
+                    "type": "string"
+                  },
+                  "supplierName": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "number"
+                  },
+                  "postedAt": {
+                    "type": "string"
+                  },
+                  "lastUpdatedAt": {
+                    "type": "string"
+                  },
+                  "read": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c9b1ae659c9c58809e",
+                  "supplierId": "607905c5b1ae659c9c585c24",
+                  "supplierName": "PT GREENTEX INDONESIA UTAMA",
+                  "type": 0,
+                  "postedAt": "2021-02-25T06:07:15.731Z",
+                  "lastUpdatedAt": "2021-04-20T08:05:27.656Z",
+                  "read": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/notifications/{id}": {
+      "put": {
+        "tags": ["notifications"],
+        "summary": "update notification",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id of notification",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "update doc",
+            "required": false,
+            "type": "boolean",
+            "default": { "read": true }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "supplierId": {
+                  "type": "string"
+                },
+                "supplierName": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "number"
+                },
+                "postedAt": {
+                  "type": "string"
+                },
+                "lastUpdatedAt": {
+                  "type": "string"
+                },
+                "read": {
+                  "type": "boolean"
+                }
+              },
+              "example": {
+                "id": "607905c9b1ae659c9c58809e",
+                "supplierId": "607905c5b1ae659c9c585c24",
+                "supplierName": "PT GREENTEX INDONESIA UTAMA",
+                "type": 0,
+                "postedAt": "2021-02-25T06:07:15.731Z",
+                "lastUpdatedAt": "2021-04-20T08:05:27.656Z",
+                "read": true
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

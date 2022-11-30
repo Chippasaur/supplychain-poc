@@ -1,0 +1,422 @@
+{
+  "paths": {
+    "/suppliers/{id}/buyers": {
+      "get": {
+        "tags": ["suppliers"],
+        "summary": "get supplier's buyers by supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "source",
+            "in": "query",
+            "description": "contributors or shipments",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "buyers": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c5b1ae659c9c585c57",
+                  "buyers": [
+                    "Cong ty TNHH GREEN VINA",
+                    "Cong ty TNHH YAKJIN Viet Nam",
+                    "Cong ty TNHH HANA KOVI VIeT NAM",
+                    "LITTLE LEAGUE BASEBALL INC",
+                    "Cong ty TNHH VINA KOREA",
+                    "CoNG TY TNHH EVER WIN VIeT NAM",
+                    "Cong Ty TNHH May Mac Alliance One",
+                    "Cong ty TNHH APPAREL FAR EASTERN (VIETNAM)",
+                    "CTY TNHH Quang Viet Tien Giang",
+                    "Cty TNHH, Lien Doanh Vinh Hung"
+                  ]
+                },
+                {
+                  "id": "607905c6b1ae659c9c585e33",
+                  "buyers": [
+                    "Cong ty TNHH GREEN VINA",
+                    "Cong ty TNHH YAKJIN Viet Nam",
+                    "Cong ty TNHH HANA KOVI VIeT NAM",
+                    "LITTLE LEAGUE BASEBALL INC",
+                    "Cong ty TNHH VINA KOREA",
+                    "CoNG TY TNHH EVER WIN VIeT NAM",
+                    "Cong Ty TNHH May Mac Alliance One",
+                    "Cong ty TNHH APPAREL FAR EASTERN (VIETNAM)",
+                    "CTY TNHH Quang Viet Tien Giang",
+                    "Cty TNHH, Lien Doanh Vinh Hung"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/suppliers/{id}/shipments": {
+      "get": {
+        "tags": ["suppliers"],
+        "summary": "get supplier's shipments by supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "totalShipments": {
+                  "type": "number"
+                },
+                "averageValue": {
+                  "type": "number"
+                },
+                "shipmentRecords": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "hsCode": {
+                        "type": "string"
+                      },
+                      "hsDescription": {
+                        "type": "string"
+                      },
+                      "buyer": {
+                        "type": "string"
+                      },
+                      "buyerCompanyCode": {
+                        "type": "string"
+                      },
+                      "volume": {
+                        "type": "number"
+                      },
+                      "value": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "totalShipments": 2,
+                "averageValue": 2524,
+                "shipmentRecords": [
+                  {
+                    "hsCode": "600632",
+                    "hsDescription": "knitted/crocheted fabrics, n.e.s. in ch.60, of synthetic fibres, dyed",
+                    "buyer": "Cty TNHH May Mac Kim Hong",
+                    "buyerCompanyCode": "ctytnhhmaymackimhong",
+                    "volume": 1,
+                    "value": 48
+                  },
+                  {
+                    "hsCode": "611020",
+                    "hsDescription": "jerseys, pullovers, cardigans, waist-coats & similar articles, knitted/crocheted, of cotton",
+                    "buyer": "COBRA GOLF INCORPORATED",
+                    "buyerCompanyCode": "cobragolfincorporated",
+                    "volume": 1,
+                    "value": 5000
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/suppliers/{id}/facilities": {
+      "get": {
+        "tags": ["suppliers"],
+        "summary": "get supplier's facilities by supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "region": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "coordinate": {
+                  "type": "object",
+                  "properties": {
+                    "latitude": {
+                      "type": "number"
+                    },
+                    "longitude": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "region": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c5b1ae659c9c585c33",
+                  "region": "SE ASIA",
+                  "name": "ADORA FOOTWEAR LIMITED",
+                  "location": {
+                    "address": "TAM DIEP INDUSTRY ZONE",
+                    "city": "NINH BINH PROVINCE",
+                    "state": "NINH BÌNH",
+                    "region": "Viet Nam",
+                    "postalCode": "000000"
+                  },
+                  "coordinate": {
+                    "latitude": 20.1605,
+                    "longitude": 105.809998
+                  }
+                },
+                {
+                  "id": "607905c5b1ae659c9c585c34",
+                  "region": "SE ASIA",
+                  "name": "ANNORA VIETNAM  FOOTWEAR CO.,LTD",
+                  "location": {
+                    "address": "NGHI SON ECONOMIC ZONE, XUAN LAM WARD,  NGHI SON TOWNSHIP",
+                    "city": "NGHI SON TOWNSHIP",
+                    "state": "THANH HÓA",
+                    "region": "Viet Nam",
+                    "postalCode": "450000"
+                  },
+                  "coordinate": {
+                    "latitude": 19.4384,
+                    "longitude": 105.775002
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/suppliers/{id}/income-statements/latest": {
+      "get": {
+        "tags": ["suppliers"],
+        "summary": "get supplier's latest income-statements by supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "supplierId": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "number"
+                },
+                "turnover": {
+                  "type": "object",
+                  "properties": {
+                    "concreteValue": {
+                      "type": "number"
+                    },
+                    "growthRate": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "netIncome": {
+                  "type": "object",
+                  "properties": {
+                    "concreteValue": {
+                      "type": "number"
+                    },
+                    "growthRate": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string"
+                    },
+                    "postalCode": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "region": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c5b1ae659c9c585c33",
+                  "region": "SE ASIA",
+                  "name": "ADORA FOOTWEAR LIMITED",
+                  "location": {
+                    "address": "TAM DIEP INDUSTRY ZONE",
+                    "city": "NINH BINH PROVINCE",
+                    "state": "NINH BÌNH",
+                    "region": "Viet Nam",
+                    "postalCode": "000000"
+                  },
+                  "coordinate": {
+                    "latitude": 20.1605,
+                    "longitude": 105.809998
+                  }
+                },
+                {
+                  "id": "607905c5b1ae659c9c585c34",
+                  "region": "SE ASIA",
+                  "name": "ANNORA VIETNAM  FOOTWEAR CO.,LTD",
+                  "location": {
+                    "address": "NGHI SON ECONOMIC ZONE, XUAN LAM WARD,  NGHI SON TOWNSHIP",
+                    "city": "NGHI SON TOWNSHIP",
+                    "state": "THANH HÓA",
+                    "region": "Viet Nam",
+                    "postalCode": "450000"
+                  },
+                  "coordinate": {
+                    "latitude": 19.4384,
+                    "longitude": 105.775002
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/suppliers/{supplierId}/mock-shipments": {
+      "get": {
+        "tags": ["suppliers"],
+        "summary": "get supplier's mockShipments by supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "supplierId",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "shipmentDate": {
+                    "type": "string"
+                  },
+                  "volume": {
+                    "type": "number"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "shipmentDate": "2021-01-01T00:00:00.000Z",
+                  "volume": 50
+                },
+                {
+                  "shipmentDate": "2021-01-02T00:00:00.000Z",
+                  "volume": 33
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.detail {
+  width: 266px;
+  padding: 0 5px;
+  font-family: HeroNew;
+
+  i {
+    margin-right: 8px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .avatar {
+    width: 42px;
+    height: 42px;
+    margin: 9px 10px 0 0;
+  }
+
+  .name {
+    line-height: 60px;
+    font-size: 14px;
+    font-weight: 800;
+    height: 60px;
+
+    p {
+      @include text-overflow(3);
+      max-height: 60px;
+      line-height: 1.5;
+      vertical-align: middle;
+      display: -webkit-inline-box;
+    }
+
+    i {
+      margin-left: 9px;
+    }
+  }
+
+  .name:hover {
+    cursor: pointer;
+  }
+
+  .location {
+    padding-top: 6.5px;
+    line-height: 16.79px;
+    font-size: 12px;
+    position: relative;
+    padding-left: 23px;
+    min-height: 25px;
+    i {
+      left: 1px;
+      top: 6.5px;
+      position: absolute;
+      color: $silver;
+    }
+  }
+
+  .category {
+    padding: 5px 0 11.5px 23px;
+    line-height: 16.79px;
+    font-size: 12px;
+    position: relative;
+
+    i {
+      left: 0;
+      top: 5px;
+      position: absolute;
+    }
+
+    .manufacturer {
+      color: $secondary-blue;
+    }
+
+    .fabric {
+      color: $label-blue;
+    }
+
+    .rawMaterial {
+      color: $label-green;
+    }
+
+    .trimAndAccessories {
+      color: $orange;
+    }
+
+    .printAndWath {
+      color: $dark-pink;
+    }
+
+    .other {
+      color: $purple;
+    }
+
+    .unknown {
+      color: $label-grey;
+    }
+  }
+
+  .footer {
+    font-size: 11px;
+    line-height: 20px;
+    padding-top: 5.5px;
+    border-top: 1px solid $light-gray-smoke;
+
+    .text {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .low {
+    color: $mantis;
+  }
+
+  .moderate {
+    color: $sunglow;
+  }
+
+  .high {
+    color: $burnt-sienna;
+  }
+
+  .severe {
+    color: $medium-carmine;
+  }
+
+  .outOfBusiness {
+    color: $night-rider;
+  }
+
+  .undetermined {
+    color: $spindle;
+  }
+
+  .unavailable {
+    color: $link-water;
+  }
+
+  .safe {
+    color: $mountain-meadow;
+  }
+
+  .averageRisk {
+    color: $casablanca;
+  }
+
+  .elevatedRisk {
+    color: $brick-red;
+  }
+
+  .caution {
+    color: $dim-gray;
+  }
+
+  .dataUnavailable {
+    color: $base-grey;
+  }
+}

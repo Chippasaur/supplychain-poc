@@ -1,0 +1,221 @@
+@mixin triangle {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid $paynes-grey;
+}
+
+.container {
+  flex: 1;
+  padding: 20px 30px;
+
+  .header {
+    @include flex-between-center;
+  }
+
+  .content {
+    margin-top: 16px;
+    display: flex;
+    @include scrollBar;
+
+    .dAndB {
+      width: 480px;
+      max-height: 671px;
+      overflow-y: scroll;
+      background: $white;
+      border: 1px solid $white;
+      box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+      padding: 25px 36px 40px 25px;
+
+      .section {
+        margin-top: 24px;
+
+        &.flexSection {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .footer {
+          font-weight: 300;
+          color: #656565;
+          font-size: 10px;
+        }
+
+        .progressBar {
+          margin-top: 16px;
+          justify-content: space-between;
+
+          .riskBar {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .other {
+      margin-left: 21px;
+
+      .secondLogo {
+        margin: auto 6px;
+      }
+
+      .otherLayout {
+        width: 360px;
+
+        @media screen and (min-width: $small-screen) {
+          width: 360px;
+        }
+
+        @media screen and (min-width: $medium-screen) {
+          width: 380px;
+        }
+
+        @media screen and (min-width: $large-screen) {
+          width: 400px;
+        }
+      }
+
+      .newsContainer {
+        width: 371px;
+        @media screen and (min-width: $small-screen) {
+          width: 371px;
+        }
+
+        @media screen and (min-width: $medium-screen) {
+          width: 391px;
+        }
+
+        @media screen and (min-width: $large-screen) {
+          width: 411px;
+        }
+      }
+    }
+  }
+}
+
+.alertsWrapper {
+  height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: $title-weight;
+  line-height: 24px;
+}
+
+.exponentTitle {
+  color: $base-grey;
+  font-weight: 400;
+  font-size: 14px;
+
+  .icon {
+    color: $label-blue;
+    vertical-align: middle;
+  }
+}
+
+.exponent {
+  font-weight: 400;
+  font-size: 24px;
+  color: $base-black;
+
+  sub {
+    font-size: 12px;
+    vertical-align: baseline;
+    margin-left: 8px;
+  }
+}
+
+.strengthBar {
+  display: flex;
+  margin-top: 5px;
+
+  .strength {
+    @include flex-center-column;
+
+    .strengthTriangle {
+      @include triangle;
+      visibility: hidden;
+
+      &.selected {
+        visibility: visible;
+      }
+    }
+
+    .bar {
+      width: 26px;
+      height: 4px;
+      background: $bokara-grey;
+      margin-top: 4px;
+      margin-right: 2px;
+    }
+
+    .text {
+      font-size: 12px;
+      font-weight: 400;
+      color: $base-grey;
+    }
+  }
+}
+
+.rainbowBar {
+  position: relative;
+  margin-top: 5px;
+
+  .rainbowTriangle {
+    @include triangle;
+    position: absolute;
+    left: 0;
+
+    &.fair {
+      left: 144px;
+    }
+
+    &.good {
+      left: 267px;
+    }
+
+    &.high {
+      left: 403px;
+    }
+  }
+
+  .compositeCreditAppraisal {
+    @include flex-between-center;
+    width: 411px;
+
+    font-size: 12px;
+
+    .index {
+      display: flex;
+      flex-direction: column;
+
+      &.center {
+        align-items: center;
+      }
+
+      &.end {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+.viabilityScore {
+  position: relative;
+  margin-top: 5px;
+  width: 411px;
+
+  .viabilityTriangle {
+    @include triangle;
+    position: absolute;
+  }
+
+  .between {
+    @include flex-between-center;
+    font-size: 12px;
+  }
+}

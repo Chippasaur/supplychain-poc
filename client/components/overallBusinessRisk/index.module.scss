@@ -1,0 +1,104 @@
+.header {
+  @include flex-start-center;
+}
+
+.riskCountContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.countRow {
+  @include flex-start-center;
+  margin-top: 10px;
+
+  span {
+    margin-right: 8px;
+  }
+
+  .signal {
+    @include square(8px);
+
+    border-radius: 50%;
+  }
+
+  .low {
+    background: $mantis;
+  }
+
+  .moderate {
+    background: $sunglow;
+  }
+
+  .high {
+    background: $burnt-sienna;
+  }
+
+  .severe {
+    background: $medium-carmine;
+  }
+
+  .outOfBusiness {
+    background: $night-rider;
+  }
+
+  .undetermined {
+    background: $spindle;
+  }
+
+  .unavailable {
+    background: $link-water;
+  }
+
+  .name {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: $base-grey;
+  }
+
+  .count {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: $base-grey;
+    margin-right: 0;
+  }
+}
+
+.riskCounts {
+  display: block;
+}
+
+.riskChart {
+  position: relative;
+  left: 5px;
+
+  canvas {
+    width: 163px !important;
+    height: 163px !important;
+  }
+}
+
+.chartCenter {
+  position: absolute;
+  top: 64px;
+  left: 58px;
+  span {
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: $paynes-grey;
+  }
+  .partnerCounts {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .partnerCountsDesc {
+    line-height: 10px;
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../resources/styles/colors';
+@import '../../resources/styles/mixins';
+@import '../../resources/styles/variables';
+
+.menu {
+  width: 150px;
+  font-size: 12px;
+  line-height: 14px;
+  color: $paynes-grey;
+  padding: 16px 0 16px 12px;
+  border-right: $pageBorder;
+  flex-shrink: 0;
+
+  .link {
+    display: block;
+    height: 24px;
+    margin-bottom: 10px;
+    @include flex-between-center;
+    cursor: pointer;
+    font-family: HeroNew;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .disabled {
+    cursor: default;
+  }
+  .active {
+    font-weight: bold;
+  }
+  .active:after {
+    content: '';
+    background: $orange;
+    width: 4.6px;
+    height: 100%;
+    display: block;
+  }
+  .disabledLink {
+    pointer-events: none;
+    color: $silver;
+  }
+}

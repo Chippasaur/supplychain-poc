@@ -1,0 +1,77 @@
+.header {
+  @include flex-start-center;
+
+  .middleText {
+    font-size: $text-size;
+    font-weight: $font-weight;
+    margin: 0 6px;
+    line-height: 24px;
+    color: $base-grey;
+  }
+}
+
+.numOfCompany {
+  flex: 1;
+  text-align: right;
+  font-size: $text-size;
+  font-weight: $font-weight;
+  color: $dim-gray;
+}
+
+.countRow {
+  margin-top: 12px;
+
+  @include flex-between-center;
+
+  .countLeft {
+    display: flex;
+    flex-direction: column;
+
+    .countLogo {
+      @include flex-start-center;
+    }
+
+    .name {
+      font-size: $title-size;
+      font-weight: $title-weight;
+      line-height: 24px;
+      margin-left: 7px;
+
+      &.safe {
+        color: $mountain-meadow;
+      }
+
+      &.averageRisk {
+        color: $casablanca;
+      }
+
+      &.elevateRisk {
+        color: $brick-red;
+      }
+
+      &.caution {
+        color: $dim-gray;
+      }
+
+      &.dataUnavailable {
+        color: $base-grey;
+      }
+    }
+
+    .description {
+      font-size: $text-size;
+      font-weight: $font-weight;
+      color: $dim-gray;
+    }
+  }
+
+  .count {
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: $font-weight;
+
+    &.unavailable {
+      color: $casper;
+    }
+  }
+}

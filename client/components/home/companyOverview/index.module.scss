@@ -1,0 +1,19 @@
+.companyOverview {
+  margin-bottom: 10px;
+  .map {
+    width: 410px;
+
+    @media screen and (min-width: $small-screen) {
+      width: 410px;
+    }
+
+    @media screen and (min-width: $medium-screen) {
+      width: 425px;
+    }
+
+    @media screen and (min-width: $large-screen) {
+      width: 440px;
+    }
+    height: 299px;
+  }
+}

@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'icons';
+  src: url('./icons.eot?e4d3e0d55ee11adc10cc28abdded9e95?#iefix') format('embedded-opentype'),
+    url('./icons.woff2?e4d3e0d55ee11adc10cc28abdded9e95') format('woff2'),
+    url('./icons.woff?e4d3e0d55ee11adc10cc28abdded9e95') format('woff'),
+    url('./icons.ttf?e4d3e0d55ee11adc10cc28abdded9e95') format('truetype'),
+    url('./icons.svg?e4d3e0d55ee11adc10cc28abdded9e95#icons') format('svg');
+}
+
+i[class^='icon-']:before,
+i[class*=' icon-']:before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-airport:before {
+  content: '\f101';
+}
+.icon-alert:before {
+  content: '\f102';
+}
+.icon-arrow-collapse:before {
+  content: '\f103';
+}
+.icon-arrow-open:before {
+  content: '\f104';
+}
+.icon-arrow-right-with-line:before {
+  content: '\f105';
+}
+.icon-arrow-right:before {
+  content: '\f106';
+}
+.icon-arrow_up:before {
+  content: '\f107';
+}
+.icon-back:before {
+  content: '\f108';
+}
+.icon-circle-arrow:before {
+  content: '\f109';
+}
+.icon-close:before {
+  content: '\f10a';
+}
+.icon-danger:before {
+  content: '\f10b';
+}
+.icon-dashboard:before {
+  content: '\f10c';
+}
+.icon-dot:before {
+  content: '\f10d';
+}
+.icon-dots:before {
+  content: '\f10e';
+}
+.icon-fabric-supplier:before {
+  content: '\f10f';
+}
+.icon-improved:before {
+  content: '\f110';
+}
+.icon-instruction:before {
+  content: '\f111';
+}
+.icon-location:before {
+  content: '\f112';
+}
+.icon-manufacturer:before {
+  content: '\f113';
+}
+.icon-messages:before {
+  content: '\f114';
+}
+.icon-no-change:before {
+  content: '\f115';
+}
+.icon-other:before {
+  content: '\f116';
+}
+.icon-partner:before {
+  content: '\f117';
+}
+.icon-port:before {
+  content: '\f118';
+}
+.icon-print-wash-or-dye-house:before {
+  content: '\f119';
+}
+.icon-product:before {
+  content: '\f11a';
+}
+.icon-raw-material-supplier:before {
+  content: '\f11b';
+}
+.icon-regressed:before {
+  content: '\f11c';
+}
+.icon-search:before {
+  content: '\f11d';
+}
+.icon-survey:before {
+  content: '\f11e';
+}
+.icon-tick:before {
+  content: '\f11f';
+}
+.icon-trims-and-accessories-supplier:before {
+  content: '\f120';
+}
+.icon-unknown:before {
+  content: '\f121';
+}
+.icon-verified:before {
+  content: '\f122';
+}
+.icon-zoom_in:before {
+  content: '\f123';
+}
+.icon-zoom_out:before {
+  content: '\f124';
+}

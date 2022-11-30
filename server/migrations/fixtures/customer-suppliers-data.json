@@ -1,0 +1,59 @@
+{
+  "savedUserId": "60404530622bfb0c9eb1a385",
+  "savedCustomerId": "60404530179b810c9ee7765c",
+  "savedSuppliersIds": [
+    "60404530179b810c9ee7765d",
+    "60404530179b810c9ee7765e",
+    "60404530179b810c9ee7765f",
+    "60404530179b810c9ee77660",
+    "60404530179b810c9ee77661",
+    "60404530179b810c9ee77662",
+    "60404530179b810c9ee77663",
+    "60404530179b810c9ee77664",
+    "60404530179b810c9ee77665"
+  ],
+  "savedSupplierIncomeStatementsIds": [
+    "60404530622bfb0c9eb1a386",
+    "60404530622bfb0c9eb1a387",
+    "60404530622bfb0c9eb1a388",
+    "60404530622bfb0c9eb1a389",
+    "60404530622bfb0c9eb1a38a",
+    "60404530622bfb0c9eb1a38b"
+  ],
+  "savedFacilitiesIds": ["60404530622bfb0c9eb1a38c", "60404530622bfb0c9eb1a38d"],
+  "savedActivitiesIds": ["60404530622bfb0c9eb1a38e", "60404530622bfb0c9eb1a38f", "60404530622bfb0c9eb1a390"],
+  "savedNewsIds": ["60404530622bfb0c9eb1a391", "60404530622bfb0c9eb1a392", "60404530622bfb0c9eb1a393"],
+  "savedTrafficLghtIndexesIds": [
+    "60404530622bfb0c9eb1a394",
+    "60404530622bfb0c9eb1a395",
+    "60404530622bfb0c9eb1a396",
+    "60404530622bfb0c9eb1a397",
+    "60404530622bfb0c9eb1a398",
+    "60404530622bfb0c9eb1a399",
+    "60404530622bfb0c9eb1a39a",
+    "60404530622bfb0c9eb1a39b",
+    "60404530622bfb0c9eb1a39c"
+  ],
+  "savedDAndBIndexesIndexesIds": [
+    "60404530622bfb0c9eb1a39d",
+    "60404530622bfb0c9eb1a39e",
+    "60404530622bfb0c9eb1a39f",
+    "60404530622bfb0c9eb1a3a0",
+    "60404530622bfb0c9eb1a3a1",
+    "60404530622bfb0c9eb1a3a2",
+    "60404530622bfb0c9eb1a3a3",
+    "60404530622bfb0c9eb1a3a4",
+    "60404530622bfb0c9eb1a3a5"
+  ],
+  "savedHiggIndexesIds": [
+    "60404530622bfb0c9eb1a3a6",
+    "60404530622bfb0c9eb1a3a7",
+    "60404530622bfb0c9eb1a3a8",
+    "60404530622bfb0c9eb1a3a9",
+    "60404530622bfb0c9eb1a3aa",
+    "60404530622bfb0c9eb1a3ab",
+    "60404530622bfb0c9eb1a3ac",
+    "60404530622bfb0c9eb1a3ad",
+    "60404530622bfb0c9eb1a3ae"
+  ]
+}

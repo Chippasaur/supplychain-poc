@@ -1,0 +1,27 @@
+.exportOption {
+  @include flex-between-center;
+
+  .des {
+    font-size: 14px;
+    font-weight: 600;
+    color: $blue;
+    cursor: pointer;
+  }
+
+  .option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $gray;
+    border: 1px solid $zumthor;
+    margin-left: 20px;
+    cursor: pointer;
+
+    @include flex-center-center;
+
+    i {
+      @include flex-center-center;
+      color: $blue-bayoux;
+    }
+  }
+}

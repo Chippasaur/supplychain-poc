@@ -1,0 +1,67 @@
+.buyerInfo {
+  @include shadow-box;
+  position: absolute;
+  top: 70px;
+  left: 24px;
+  border-radius: 6px;
+  padding: 12px 18px;
+  width: 300px;
+}
+
+.facilityInfo {
+  padding-bottom: 15px;
+
+  .name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .address {
+    display: flex;
+    align-items: flex-start;
+
+    i {
+      margin-top: 6px;
+      margin-right: 6px;
+    }
+
+    font-size: 10px;
+    font-weight: 400;
+    color: $base-grey;
+  }
+}
+
+.buyers {
+  border-top: 1px solid $light-gray-smoke;
+  .otherBuyersTitle {
+    margin-top: 9px;
+    font-family: HeroNew;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+  }
+  .companyInfo {
+    @include flex-start-center;
+    margin: 16px 0;
+
+    .avatar {
+      @include square(26px);
+      font-size: 12px;
+    }
+  }
+
+  .viewMore {
+    @include flex-start-center;
+
+    font-size: 12px;
+    font-weight: 600;
+    color: $secondary-dark-blue;
+    cursor: pointer;
+
+    i {
+      margin-left: 8px;
+    }
+  }
+}

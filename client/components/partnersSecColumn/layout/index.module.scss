@@ -1,0 +1,37 @@
+.box {
+  @include shadow-box;
+  padding: 5px 20px 20px;
+  margin-bottom: 12px;
+  width: 273px;
+
+  @media screen and (min-width: $small-screen) {
+    width: 273px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 298px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 364px;
+  }
+}
+
+.header {
+  @include flex-between-center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-grey;
+  margin: 15px 0 10px 0;
+}
+
+.logo {
+  @include flex-between-center;
+}
+
+.view {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: $blue;
+}

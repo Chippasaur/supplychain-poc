@@ -1,0 +1,107 @@
+.box {
+  @include shadow-box;
+  padding: 12px 14px 0 20px;
+  margin-bottom: 12px;
+}
+
+.header {
+  @include flex-between-center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.company {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $paynes-grey;
+}
+
+.view {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: $secondary-dark-blue;
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 11px;
+  line-height: 20px;
+  padding-top: 5.5px;
+  border-top: 1px solid $light-gray-smoke;
+}
+
+.location {
+  padding-top: 6.5px;
+  line-height: 16.79px;
+  font-size: 12px;
+  position: relative;
+  padding-left: 23px;
+
+  i {
+    left: 1px;
+    top: 6.5px;
+    position: absolute;
+  }
+}
+
+.icon {
+  color: $cinnabar;
+}
+
+.category {
+  padding: 5px 0 11.5px 23px;
+  line-height: 16.79px;
+  font-size: 12px;
+  position: relative;
+
+  i {
+    left: 0;
+    top: 5px;
+    position: absolute;
+  }
+
+  .manufacturer {
+    color: $secondary-blue;
+  }
+
+  .fabric {
+    color: $label-blue;
+  }
+
+  .rawMaterial {
+    color: $label-green;
+  }
+
+  .trimAndAccessories {
+    color: $orange;
+  }
+
+  .printAndWath {
+    color: $dark-pink;
+  }
+
+  .other {
+    color: $purple;
+  }
+
+  .unknown {
+    color: $label-grey;
+  }
+}

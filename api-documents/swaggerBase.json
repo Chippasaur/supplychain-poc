@@ -1,0 +1,9 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Visibility api documentation",
+    "version": "0.1.0",
+    "title": "Visibility"
+  },
+  "basePath": "/api/v1"
+}

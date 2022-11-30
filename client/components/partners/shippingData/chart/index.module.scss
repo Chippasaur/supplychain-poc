@@ -1,0 +1,79 @@
+.chartWrapper {
+  p {
+    font-size: 12px;
+    line-height: 17px;
+    color: $paynes-grey;
+    margin-bottom: 10px;
+  }
+
+  .bold {
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+
+  .general {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart {
+    background: $white;
+    flex: 1;
+    width: 601px;
+    height: 182px;
+    margin-left: 10px;
+    padding: 10px 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 10px;
+
+    .chartLayout {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .chartContainer {
+      width: 93%;
+      height: 150px;
+    }
+
+    .yAxisLabel {
+      margin-bottom: 5px;
+    }
+
+    .xAxisLabel {
+      margin: 130px 0 0 20px;
+    }
+  }
+}
+
+.numberItem {
+  background: $white;
+  padding: 18px 39px;
+  height: 86px;
+  width: 215px;
+  font-size: 12px;
+  line-height: 17px;
+  order: 1;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  .numberItemTitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $base-black;
+    margin-bottom: 4px;
+  }
+
+  .numberItemDescription {
+    color: $base-grey;
+  }
+}
+
+.numberItem:first-child {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,89 @@
+.filter {
+  position: absolute;
+  right: 1px;
+  top: -50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  @media screen and (min-width: $small-screen) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 343px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 370px;
+  }
+}
+
+.item {
+  @include shadow-box;
+  min-height: 98px;
+  width: 325px;
+  margin: 2px 0 14px 2px;
+  padding: 16px 14px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: $small-screen) {
+    margin: 2px 8px 14px 6px;
+  }
+
+  @media screen and (min-width: $small-screen) {
+    width: 325px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 332px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 359px;
+  }
+}
+
+.date {
+  font-size: 12px;
+  font-weight: $font-weight;
+}
+
+.content {
+  font-size: 14px;
+  font-weight: $font-weight;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.newsContent {
+  -webkit-line-clamp: 3;
+}
+
+.header {
+  @include flex-between-center;
+  margin-bottom: 12px;
+}
+
+.tier {
+  font-size: 12px;
+  font-weight: $font-weight;
+  color: $base-grey;
+}
+
+.contentTitle {
+  font-size: 14px;
+  font-weight: $title-weight;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,40 @@
+.shippingData {
+  width: 100%;
+
+  h2 {
+    margin: 20px 35px 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+    margin: 20px 35px 20px;
+    font-size: 12px;
+  }
+
+  .divider {
+    width: 8px;
+    height: 1px;
+    background: $grey-2;
+    margin: 0 10px;
+  }
+
+  .dateItem {
+    @include flex-center-center;
+    padding: 8px 11px;
+    border: 1px solid $grey-2;
+    border-radius: 2px;
+
+    svg {
+      margin-left: 15px;
+    }
+  }
+
+  .info {
+    background: $light-white-smoke;
+    padding: 18px 180px 18px 35px;
+  }
+}

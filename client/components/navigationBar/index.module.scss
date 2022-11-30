@@ -1,0 +1,17 @@
+@import '../../resources/styles/mixins';
+@import '../../resources/styles/colors';
+@import '../../resources/styles/variables';
+
+.navigationRightButton {
+  @include flex-center-center;
+  height: $navigation-height;
+  border-left: 1px solid $silver;
+  padding: 0 20px;
+  font-size: 12px;
+  color: $silver;
+  cursor: default;
+
+  .icon {
+    margin-left: 10px;
+  }
+}

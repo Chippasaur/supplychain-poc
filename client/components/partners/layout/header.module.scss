@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  align-items: center;
+  color: $paynes-grey;
+  padding: 16px 24px;
+  border-bottom: $pageBorder;
+
+  p {
+    font-weight: $title-weight;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 11px;
+    position: relative;
+
+    i {
+      margin-right: 4px;
+    }
+  }
+
+  label:not(:last-child):after {
+    content: '';
+    width: 1px;
+    height: 10px;
+    background: $silver;
+    display: inline-block;
+    margin-left: 11px;
+  }
+
+  .verified {
+    display: inline-flex;
+    align-items: center;
+    color: $green;
+  }
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-weight: $title-weight;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 32px;
+  float: left;
+  line-height: 32px;
+}
+
+.typeCell {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.rowBox {
+  display: inline-block;
+  padding: 0 13px;
+  border-radius: 6px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 11px;
+
+  &.group {
+    background: rgba(226, 180, 0, 0.2);
+  }
+
+  &.facility {
+    background: rgba(225, 95, 0, 0.2);
+  }
+}

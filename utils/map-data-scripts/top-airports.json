@@ -1,0 +1,455 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [5.443220138549805, 50.63740158081055] },
+      "geometry_name": "shape",
+      "properties": { "name": "Liège Airport", "shortName": "Liege", "code": "LGG", "code2": "EBLG" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [8.570556, 50.033333] },
+      "geometry_name": "shape",
+      "properties": { "name": "Frankfurt am Main Airport", "shortName": "Frankfurt", "code": "FRA", "code2": "EDDF" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [7.1427397728, 50.8658981323] },
+      "geometry_name": "shape",
+      "properties": { "name": "Cologne Bonn Airport", "shortName": "Cologne", "code": "CGN", "code2": "EDDK" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [12.236389, 51.423889] },
+      "geometry_name": "shape",
+      "properties": { "name": "Leipzig/Halle Airport", "shortName": "Leipzig", "code": "LEJ", "code2": "EDDP" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-0.461941, 51.4706] },
+      "geometry_name": "shape",
+      "properties": { "name": "London Heathrow Airport", "shortName": "London", "code": "LHR", "code2": "EGLL" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [4.76389, 52.308601] },
+      "geometry_name": "shape",
+      "properties": { "name": "Amsterdam Airport Schiphol", "shortName": "Amsterdam", "code": "AMS", "code2": "EHAM" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [6.2044444, 49.6233333] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Luxembourg-Findel International Airport",
+        "shortName": "Luxemburg",
+        "code": "LUX",
+        "code2": "ELLX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-3.56264, 40.471926] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Adolfo Suárez Madrid–Barajas Airport",
+        "shortName": "Madrid",
+        "code": "MAD",
+        "code2": "LEMD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [2.55, 49.012798] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Charles de Gaulle International Airport",
+        "shortName": "Paris",
+        "code": "CDG",
+        "code2": "LFPG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [28.8146, 40.976898] },
+      "geometry_name": "shape",
+      "properties": { "name": "Atatürk International Airport", "shortName": "Istanbul", "code": "ISL", "code2": "LTBA" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-99.072098, 19.4363] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Licenciado Benito Juarez International Airport",
+        "shortName": "Mexico City",
+        "code": "MEX",
+        "code2": "MMMX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [54.651100158691406, 24.433000564575195] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Abu Dhabi International Airport",
+        "shortName": "Abu Dhabi",
+        "code": "AUH",
+        "code2": "OMAA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [55.3643989563, 25.2527999878] },
+      "geometry_name": "shape",
+      "properties": { "name": "Dubai International Airport", "shortName": "Dubai", "code": "DXB", "code2": "OMDB" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [121.233002, 25.0777] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Taiwan Taoyuan International Airport",
+        "shortName": "Taipei",
+        "code": "TPE",
+        "code2": "RCTP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [140.386001587, 35.7647018433] },
+      "geometry_name": "shape",
+      "properties": { "name": "Narita International Airport", "shortName": "Tokyo", "code": "NRT", "code2": "RJAA" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [139.779999, 35.552299] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Tokyo Haneda International Airport",
+        "shortName": "Tokyo",
+        "code": "HND",
+        "code2": "RJTT"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [121.019997, 14.5086] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Ninoy Aquino International Airport",
+        "shortName": "Manila",
+        "code": "MNL",
+        "code2": "RPLL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.1469, 4.70159] },
+      "geometry_name": "shape",
+      "properties": { "name": "El Dorado International Airport", "shortName": "Bogota", "code": "BOG", "code2": "SKBO" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [72.8678970337, 19.0886993408] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Chhatrapati Shivaji International Airport",
+        "shortName": "Mumbai",
+        "code": "BOM",
+        "code2": "VABB"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [113.915001, 22.308901] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Hong Kong International Airport",
+        "shortName": "Hong Kong",
+        "code": "HKG",
+        "code2": "VHHH"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [77.103104, 28.5665] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Indira Gandhi International Airport",
+        "shortName": "Delhi",
+        "code": "DEL",
+        "code2": "VIDP"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [105.80699920654297, 21.221200942993164] },
+      "geometry_name": "shape",
+      "properties": { "name": "Noi Bai International Airport", "shortName": "Hanoi", "code": "HAN", "code2": "VVNB" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [106.65599823, -6.1255698204] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Soekarno-Hatta International Airport",
+        "shortName": "Jakarta",
+        "code": "CGK",
+        "code2": "WIII"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [101.70999908447, 2.745579957962] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Kuala Lumpur International Airport",
+        "shortName": "Kuala Lumpur",
+        "code": "KUL",
+        "code2": "WMKK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [103.994003, 1.35019] },
+      "geometry_name": "shape",
+      "properties": { "name": "Singapore Changi Airport", "shortName": "Singapore", "code": "SIN", "code2": "WSSS" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [116.58499908447266, 40.080101013183594] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Beijing Capital International Airport",
+        "shortName": "Beijing",
+        "code": "PEK",
+        "code2": "ZBAA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [113.29900360107422, 23.39240074157715] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Guangzhou Baiyun International Airport",
+        "shortName": "Guangzhou",
+        "code": "CAN",
+        "code2": "ZGGG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [113.81099700927734, 22.639299392700195] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Shenzhen Bao'an International Airport",
+        "shortName": "Shenzhen",
+        "code": "SZX",
+        "code2": "ZGSZ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [120.43399810791016, 30.22949981689453] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Hangzhou Xiaoshan International Airport",
+        "shortName": "Hangzhou",
+        "code": "HGH",
+        "code2": "ZSHC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [103.9469985961914, 30.578500747680664] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Chengdu Shuangliu International Airport",
+        "shortName": "Chengdu",
+        "code": "CTU",
+        "code2": "ZUUU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [121.80500030517578, 31.143400192260742] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Shanghai Pudong International Airport",
+        "shortName": "Shanghai",
+        "code": "PVG",
+        "code2": "ZSPD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-122.221001, 37.721298] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Metropolitan Oakland International Airport",
+        "shortName": "Oakland",
+        "code": "OAK",
+        "code2": "KOAK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-89.97669982910156, 35.04240036010742] },
+      "geometry_name": "shape",
+      "properties": { "name": "Memphis International Airport", "shortName": "Memphis", "code": "MEM", "code2": "KMEM" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-118.4079971, 33.94250107] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Los Angeles International Airport",
+        "shortName": "Los Angeles",
+        "code": "LAX",
+        "code2": "KLAX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-84.6678009033, 39.0488014221] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Cincinnati Northern Kentucky International Airport",
+        "shortName": "Cincinnati",
+        "code": "CVG",
+        "code2": "KCVG"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-74.168701171875, 40.692501068115234] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Newark Liberty International Airport",
+        "shortName": "Newark",
+        "code": "EWR",
+        "code2": "KEWR"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-80.29060363769531, 25.79319953918457] },
+      "geometry_name": "shape",
+      "properties": { "name": "Miami International Airport", "shortName": "Miami", "code": "MIA", "code2": "KMIA" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-86.294403, 39.7173] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Indianapolis International Airport",
+        "shortName": "Indianapolis",
+        "code": "IND",
+        "code2": "KIND"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-97.038002, 32.896801] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Dallas Fort Worth International Airport",
+        "shortName": "Dallas-Fort Worth",
+        "code": "DFW",
+        "code2": "KDFW"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-84.428101, 33.6367] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Hartsfield Jackson Atlanta International Airport",
+        "shortName": "Atlanta",
+        "code": "ATL",
+        "code2": "KATL"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-117.60099792480469, 34.055999755859375] },
+      "geometry_name": "shape",
+      "properties": { "name": "Ontario International Airport", "shortName": "Ontario", "code": "ONT", "code2": "KONT" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-149.99600219726562, 61.174400329589844] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Ted Stevens Anchorage International Airport",
+        "shortName": "Anchorage",
+        "code": "ANC",
+        "code2": "PANC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-73.77890015, 40.63980103] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "John F Kennedy International Airport",
+        "shortName": "New York",
+        "code": "JFK",
+        "code2": "KJFK"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-87.9048, 41.9786] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Chicago O'Hare International Airport",
+        "shortName": "Chicago",
+        "code": "ORD",
+        "code2": "KORD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [100.74700164794922, 13.681099891662598] },
+      "geometry_name": "shape",
+      "properties": { "name": "Suvarnabhumi Airport", "shortName": "Bangkok", "code": "BKK", "code2": "VTBS" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [126.45099639892578, 37.46910095214844] },
+      "geometry_name": "shape",
+      "properties": { "name": "Incheon International Airport", "shortName": "Seoul", "code": "ICN", "code2": "RKSI" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [135.24400329589844, 34.42729949951172] },
+      "geometry_name": "shape",
+      "properties": { "name": "Kansai International Airport", "shortName": "Osaka", "code": "KIX", "code2": "RJBB" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-85.736, 38.1744] },
+      "geometry_name": "shape",
+      "properties": {
+        "name": "Louisville International Standiford Field",
+        "shortName": "Louisville",
+        "code": "SDF",
+        "code2": "KSDF"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [55.161389, 24.896356] },
+      "geometry_name": "shape",
+      "properties": { "name": "Al Maktoum International Airport", "shortName": "Dubai", "code": "DWC", "code2": "OMDW" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [51.608056, 25.273056] },
+      "geometry_name": "shape",
+      "properties": { "name": "Hamad International Airport", "shortName": "Doha", "code": "DOH", "code2": "OTHH" }
+    }
+  ]
+}

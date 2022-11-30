@@ -1,0 +1,801 @@
+{
+  "paths": {
+    "/customers/{id}": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer by id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "logoUri": {
+                  "type": "string"
+                },
+                "relations": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "source": {
+                        "type": "string"
+                      },
+                      "target": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "example": {
+                "id": "607905c5b1ae659c9c585b9a",
+                "name": "Sustainable Stitch Group",
+                "logoUri": "/companies/SSG.svg",
+                "relations": [
+                  {
+                    "_id": "607905c6b1ae659c9c585f2a",
+                    "source": "607905c6b1ae659c9c585dee",
+                    "target": "607905c5b1ae659c9c585b9a"
+                  },
+                  {
+                    "_id": "607905c6b1ae659c9c585f2b",
+                    "source": "607905c6b1ae659c9c585df0",
+                    "target": "607905c5b1ae659c9c585b9a"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customers/{id}/credit-risk-counts": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer credit-risk-counts by customer id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "number"
+                  },
+                  "count": {
+                    "type": "number"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "level": 0,
+                  "count": 277
+                },
+                {
+                  "level": 1,
+                  "count": 249
+                },
+                {
+                  "level": 2,
+                  "count": 3
+                },
+                {
+                  "level": 3,
+                  "count": 1
+                },
+                {
+                  "level": 4,
+                  "count": 38
+                },
+                {
+                  "level": 5,
+                  "count": 13
+                },
+                {
+                  "level": 6,
+                  "count": 10
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/customers/{id}/financial-risk-counts": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer financial-risk-counts by customer id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "number"
+                  },
+                  "count": {
+                    "type": "number"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "level": 0,
+                  "count": 34
+                },
+                {
+                  "level": 1,
+                  "count": 22
+                },
+                {
+                  "level": 2,
+                  "count": 4
+                },
+                {
+                  "level": 4,
+                  "count": 850
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/customers/{id}/suppliers": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer's suppliers by customer id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "companyName": {
+                    "type": "string"
+                  },
+                  "entity": {
+                    "type": "number"
+                  },
+                  "tier": {
+                    "type": "number"
+                  },
+                  "financialHealth": {
+                    "type": "number"
+                  },
+                  "rating": {
+                    "type": "number"
+                  },
+                  "riskLevel": {
+                    "type": "number"
+                  },
+                  "higgTotalScore": {
+                    "type": "number"
+                  },
+                  "category": {
+                    "type": "number"
+                  },
+                  "coordinate": {
+                    "type": "object",
+                    "properties": {
+                      "latitude": {
+                        "type": "number"
+                      },
+                      "longitude": {
+                        "type": "number"
+                      }
+                    }
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "address": {
+                        "type": "string",
+                        "required": false
+                      },
+                      "postalCode": {
+                        "type": "string",
+                        "required": false
+                      },
+                      "state": {
+                        "type": "string",
+                        "required": false
+                      },
+                      "city": {
+                        "type": "string",
+                        "required": false
+                      },
+                      "region": {
+                        "type": "string",
+                        "required": false
+                      }
+                    }
+                  },
+                  "logo": {
+                    "type": "string"
+                  },
+                  "groupId": {
+                    "type": "string",
+                    "required": false
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c5b1ae659c9c585b9b",
+                  "companyName": "A & K DESIGNS, INC.",
+                  "entity": 0,
+                  "tier": 2,
+                  "financialHealth": 2,
+                  "rating": 0.5,
+                  "riskLevel": 1,
+                  "higgTotalScore": 16.345680196288446,
+                  "category": 3,
+                  "coordinate": {
+                    "latitude": 45.463299,
+                    "longitude": -122.577003
+                  },
+                  "location": {
+                    "address": "Rua ARMINDO ELTZ 51",
+                    "postalCode": "93700-000",
+                    "state": "RIO GRANDE DO SUL",
+                    "city": "CAMPO BOM (QUATRO COLONIAS )",
+                    "region": "Brazil"
+                  },
+                  "logo": "",
+                  "groupId": "607905c5b1ae659c9c585b9f"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/customers/{customerId}/suppliers/{supplierId}": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer's supplier by customer id and supplier id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "customerId",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          },
+          {
+            "name": "supplierId",
+            "in": "path",
+            "description": "ID of supplier",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "tier": {
+                  "type": "number"
+                },
+                "logoUri": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "contact": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "telephone": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "jobTitle": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "category": {
+                  "type": "number"
+                },
+                "entity": {
+                  "type": "number"
+                },
+                "groupId": {
+                  "type": "string"
+                },
+                "coordinate": {
+                  "type": "object",
+                  "properties": {
+                    "latitude": {
+                      "type": "number"
+                    },
+                    "longitude": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "business": {
+                  "type": "object",
+                  "properties": {
+                    "businessType": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "entityType": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "address": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "postalCode": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "state": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "city": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "region": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "officialContact": {
+                  "type": "object",
+                  "properties": {
+                    "telephone": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "officialEmail": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "websiteUrl": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "registration": {
+                  "type": "object",
+                  "properties": {
+                    "registrationName": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "registrationNumber": {
+                      "type": "string",
+                      "required": false
+                    },
+                    "registrationType": {
+                      "type": "string",
+                      "required": false
+                    }
+                  }
+                },
+                "overallStatus": {
+                  "type": "object",
+                  "properties": {
+                    "companyStatus": {
+                      "type": "number",
+                      "required": false
+                    },
+                    "sanction": {
+                      "type": "number"
+                    },
+                    "ultimateOwners": {
+                      "type": "string"
+                    },
+                    "beneficialOwners": {
+                      "type": "string"
+                    },
+                    "revenue": {
+                      "type": "number"
+                    },
+                    "employeeNum": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "dAndB": {
+                  "type": "object",
+                  "properties": {
+                    "businessRiskLevel": {
+                      "type": "number"
+                    },
+                    "rating": {
+                      "type": "string"
+                    },
+                    "padex": {
+                      "type": "number"
+                    },
+                    "financialStrength": {
+                      "type": "number"
+                    },
+                    "compositeCreditAppraisal": {
+                      "type": "number"
+                    },
+                    "financialRisk": {
+                      "type": "number"
+                    },
+                    "viabilityRating": {
+                      "type": "string"
+                    },
+                    "viabilityScore": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "higgIndex": {
+                  "type": "object",
+                  "properties": {
+                    "selfAssessment": {
+                      "type": "number"
+                    },
+                    "verified": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "trafficLight": {
+                  "type": "object",
+                  "properties": {
+                    "level": {
+                      "type": "number"
+                    }
+                  }
+                }
+              },
+              "example": {
+                "id": "6084d8987e3b1c73dc938798",
+                "tier": 2,
+                "logoUri": "",
+                "name": "ANIGER CALCADOS SUPRIMENTOS E EMPREENDIMENTOS LTDA",
+                "contact": {
+                  "name": "Dummy",
+                  "email": "dummy@email.com",
+                  "telephone": "2513511866",
+                  "jobTitle": "Lead Quality Consultant"
+                },
+                "category": 2,
+                "entity": 0,
+                "groupId": "6084d8987e3b1c73dc9389dd",
+                "coordinate": {
+                  "longitude": -51.028301,
+                  "latitude": -29.6609
+                },
+                "business": {
+                  "businessType": "Mfg footwear-except rubber",
+                  "entityType": "Parent/Headquarters"
+                },
+                "location": {
+                  "address": "Rua ARMINDO ELTZ 51",
+                  "postalCode": "93700-000",
+                  "state": "RIO GRANDE DO SUL",
+                  "city": "CAMPO BOM (QUATRO COLONIAS )",
+                  "region": "Brazil"
+                },
+                "officialContact": {
+                  "telephone": "2513511866",
+                  "officialEmail": "carmen.santos@aniger.com.br",
+                  "websiteUrl": "www.sample.com"
+                },
+                "registration": {
+                  "registrationName": "Aniger Calcados Suprimentos e Empreendimentos Ltda",
+                  "registrationNumber": "000000190044918",
+                  "registrationType": "State Registry Number (BR)"
+                },
+                "overallStatus": {
+                  "companyStatus": 0,
+                  "sanction": 0,
+                  "ultimateOwners": "Will Simith",
+                  "beneficialOwners": "Jane Done",
+                  "revenue": 75278481,
+                  "employeeNum": 10000
+                },
+                "dAndB": {
+                  "businessRiskLevel": 0,
+                  "rating": "CB3",
+                  "padex": 61,
+                  "financialStrength": 7,
+                  "compositeCreditAppraisal": 3,
+                  "financialRisk": 3,
+                  "viabilityRating": "14AA",
+                  "viabilityScore": 3
+                },
+                "higgIndex": {
+                  "selfAssessment": 46,
+                  "verified": 29
+                },
+                "trafficLight": {
+                  "level": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/customers/{id}/sustainability-performance-scores": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer sustainability-performance-scores by customer id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "performance": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "sustainabilityIndex": {
+                        "type": "string"
+                      },
+                      "score": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "reportTime": {
+                  "type": "string"
+                }
+              },
+              "example": [
+                {
+                  "performance": [
+                    {
+                      "sustainabilityIndex": "totalAverage",
+                      "score": "50.7"
+                    },
+                    {
+                      "sustainabilityIndex": "ems",
+                      "score": "49.3"
+                    },
+                    {
+                      "sustainabilityIndex": "energyEmissions",
+                      "score": "52.5"
+                    },
+                    {
+                      "sustainabilityIndex": "waterUse",
+                      "score": "50.7"
+                    },
+                    {
+                      "sustainabilityIndex": "wasteWaterEffluent",
+                      "score": "51.4"
+                    },
+                    {
+                      "sustainabilityIndex": "emissionToAir",
+                      "score": "48.0"
+                    },
+                    {
+                      "sustainabilityIndex": "wasteManagement",
+                      "score": "51.6"
+                    },
+                    {
+                      "sustainabilityIndex": "chemicals",
+                      "score": "51.4"
+                    }
+                  ],
+                  "reportTime": 2021
+                },
+                {
+                  "performance": [
+                    {
+                      "sustainabilityIndex": "totalAverage",
+                      "score": "49.6"
+                    },
+                    {
+                      "sustainabilityIndex": "ems",
+                      "score": "48.7"
+                    },
+                    {
+                      "sustainabilityIndex": "energyEmissions",
+                      "score": "49.1"
+                    },
+                    {
+                      "sustainabilityIndex": "waterUse",
+                      "score": "52.5"
+                    },
+                    {
+                      "sustainabilityIndex": "wasteWaterEffluent",
+                      "score": "47.5"
+                    },
+                    {
+                      "sustainabilityIndex": "emissionToAir",
+                      "score": "49.4"
+                    },
+                    {
+                      "sustainabilityIndex": "wasteManagement",
+                      "score": "49.9"
+                    },
+                    {
+                      "sustainabilityIndex": "chemicals",
+                      "score": "49.8"
+                    }
+                  ],
+                  "reportTime": 2020
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "/customers/{id}/notification-contents": {
+      "get": {
+        "tags": ["customers"],
+        "summary": "get customer financial-risk-counts by customer id",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "ID of customer",
+            "required": true,
+            "type": "string",
+            "format": "int64"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "supplierId": {
+                    "type": "string"
+                  },
+                  "supplierName": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "number"
+                  },
+                  "postedAt": {
+                    "type": "string"
+                  },
+                  "lastUpdatedAt": {
+                    "type": "string"
+                  },
+                  "read": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "example": [
+                {
+                  "id": "607905c9b1ae659c9c5880ae",
+                  "supplierId": "607905c5b1ae659c9c585bf1",
+                  "supplierName": "ECLAT TEXTILE CO., LTD VN",
+                  "type": 2,
+                  "postedAt": "2021-03-08T01:03:20.158Z",
+                  "lastUpdatedAt": "2021-04-19T11:50:04.172Z",
+                  "read": true
+                },
+                {
+                  "id": "607905c9b1ae659c9c5880b7",
+                  "supplierId": "607905c6b1ae659c9c585e76",
+                  "supplierName": "TUNTEX",
+                  "type": 2,
+                  "postedAt": "2021-03-06T21:03:23.957Z",
+                  "lastUpdatedAt": "2021-04-16T03:34:33.894Z",
+                  "read": false
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

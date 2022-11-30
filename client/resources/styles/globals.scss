@@ -1,0 +1,85 @@
+@import './iconfons/icons';
+@import './fonts';
+@import './reset';
+@import './colors';
+@import './mixins';
+@import './variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: HeroNew;
+  min-height: 100vh;
+}
+
+body {
+  background: $light-gray;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body > div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#app {
+  flex: 1;
+  margin: 20px auto 30px;
+
+  width: 1175px;
+
+  @media screen and (min-width: $small-screen) {
+    width: 1175px;
+  }
+
+  @media screen and (min-width: $medium-screen) {
+    width: 1200px;
+  }
+
+  @media screen and (min-width: $large-screen) {
+    width: 1295px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+  margin: 30px 0 0 24px !important;
+  width: 300px !important;
+}
+
+.mapboxgl-popup .mapboxgl-popup-content {
+  @include popup-animation;
+  animation: popup 0.1s;
+}
+
+.mapboxgl-popup-content {
+  border-radius: 8px !important;
+  box-shadow: 0 1px 6px 4px rgb(0 0 0 / 0.15) !important;
+  padding: 10px !important;
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}

@@ -1,0 +1,261 @@
+.wrapper {
+  flex: 1;
+  background-color: $light-white-smoke;
+}
+
+.header {
+  @include flex-between-center;
+  height: 53px;
+  background-color: $very-light-grey;
+  line-height: 53px;
+  padding-right: 52px;
+}
+
+.tabs {
+  background-color: $very-light-grey;
+  padding-left: 35px;
+}
+
+.title {
+  font-weight: $title-weight;
+  font-size: 16px;
+  margin-left: 28px;
+}
+
+.box {
+  @include shadow-box;
+  display: flex;
+  margin: 24px 56px 25px 24px;
+}
+
+.container {
+  @include flex-start-column;
+  padding: 18px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 532px;
+  background-color: $gray;
+  padding: 24px 53px 0 16px;
+
+  .iconTitle {
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .icon {
+    margin-bottom: 8px;
+  }
+
+  .iconLabel {
+    font-weight: $font-weight;
+    font-size: 12px;
+    margin-left: 15px;
+    color: $base-grey;
+  }
+}
+
+.subTitle {
+  font-weight: $title-weight;
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 40px;
+}
+
+.charts {
+  display: flex;
+}
+
+.mockTitle {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 15px 0 0 15px;
+}
+
+.mockContent {
+  display: flex;
+}
+
+.mockChart {
+  position: relative;
+  margin-left: 5px;
+}
+
+.firstCircleArrow {
+  position: absolute;
+  top: 68px;
+  left: 78px;
+}
+
+.secondCircleArrow {
+  position: absolute;
+  top: 100px;
+  left: 78px;
+}
+
+.mockDescription {
+  position: relative;
+  margin-left: 40px;
+
+  p {
+    position: relative;
+    top: 35px;
+    line-height: 20px;
+    margin-bottom: 11px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.totalView {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.variousView {
+  width: 75%;
+  height: 297px;
+}
+
+.chart {
+  float: left;
+  height: 132px;
+  margin-bottom: 33px;
+  margin-left: 35px;
+  position: relative;
+}
+
+.totalChart {
+  height: 233px;
+  position: relative;
+}
+
+.totalChartCenter {
+  @include flex-center-column;
+
+  width: 60px;
+  position: absolute;
+  top: 58px;
+  left: 44px;
+
+  .currentScore {
+    font-weight: $title-weight;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .pointsLabel {
+    font-weight: $font-weight;
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+
+  .previousScore {
+    font-weight: $font-weight;
+    font-size: 14px;
+    color: $base-grey;
+  }
+}
+
+.chartCenter {
+  @include flex-center-column;
+
+  position: absolute;
+  width: 42px;
+  top: 28px;
+  left: 28px;
+
+  .currentScore {
+    font-weight: $title-weight;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .previousScore {
+    font-weight: $font-weight;
+    font-size: 12px;
+    color: $base-grey;
+  }
+}
+
+.label {
+  margin-top: 12px;
+  text-align: center;
+  width: 98px;
+  height: 32px;
+}
+
+.totalLabel {
+  position: relative;
+  margin-top: 12px;
+  text-align: center;
+
+  .instruction {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    color: $base-grey;
+  }
+
+  .hoverInstruction {
+    color: $label-blue;
+  }
+
+  .label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .id {
+    font-weight: $font-weight;
+    font-size: 14px;
+    color: $base-grey;
+  }
+}
+
+.headMsg {
+  font-weight: 500;
+  font-size: 14px;
+  color: $base-grey;
+  text-align: center;
+}
+
+.msg {
+  line-height: 29px;
+  text-align: center;
+  height: 29px;
+  background-color: $light-cyan;
+  font-weight: 500;
+  font-size: 12px;
+  color: $label-blue;
+  margin: 8px auto;
+  width: 105px;
+}
+
+.description {
+  line-height: 16px;
+  word-break: break-word;
+  font-size: 12px;
+  font-weight: $font-weight;
+}
+
+.improved {
+  color: $Dark-pastel-green;
+}
+
+.regressed {
+  color: $venetian-red;
+}
+
+.noChange {
+  color: $selective-yellow;
+}
+
+.placeholder {
+  height: 532px;
+}

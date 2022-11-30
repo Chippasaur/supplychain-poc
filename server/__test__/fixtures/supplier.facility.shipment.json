@@ -1,0 +1,18 @@
+[
+  {
+    "hsCode": "610000",
+    "hsDescription": "XinJiang Cotton",
+    "buyer": "Nike",
+    "buyerCompanyCode": "nike",
+    "volume": 2,
+    "value": 2000
+  },
+  {
+    "hsCode": "610001",
+    "hsDescription": "Fabric",
+    "buyer": "GAP",
+    "buyerCompanyCode": "gap",
+    "volume": 2,
+    "value": 1000
+  }
+]
